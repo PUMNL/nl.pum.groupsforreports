@@ -20,7 +20,7 @@ class CRM_Groupsforreports_GroupReport
       'Anamon_120',
       'Business_Link_Coordinators_21',
       'Country_Coordinators_Gabrielle_105',
-      'Programme_Managers_58',
+      //'Programme_Managers_58',
       'Projectmanagers_82',
       'Project_Officers_54',
       'Sector_Coordinators_55'
