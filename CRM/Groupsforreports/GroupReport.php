@@ -19,7 +19,7 @@ class CRM_Groupsforreports_GroupReport
     $groups = array(
       'Anamon_120',
       'Country_Coordinators_Gabrielle_105',
-      'Programme_Managers_58',
+      //'Programme_Managers_58',
       'Projectmanagers_82',
       'Project_Officers_54',
       'Sector_Coordinators_55'
