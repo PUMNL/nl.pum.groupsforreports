@@ -18,18 +18,24 @@ class CRM_Groupsforreports_GroupReport
   {
     $groups = array(
       'Anamon_120',
-      'Business_Link_Coordinators_21',
       'Country_Coordinators_Gabrielle_105',
       'Programme_Managers_58',
       'Projectmanagers_82',
       'Project_Officers_54',
       'Sector_Coordinators_55'
     );
-    $this->_reports['CRM_Civireports_Form_Report_MyProjectIntake'] = $groups;
     $this->_reports ['CRM_Casereports_Form_Report_PumProjects'] = $groups;
     $this->_reports ['CRM_Threepeas_Form_Report_PumProjects'] = $groups;
+
+    $groups[] = 'Business_Link_Coordinators_21';
+
+    $this->_reports['CRM_Civireports_Form_Report_MyProjectIntake'] = $groups;
+    $this->_reports['CRM_Casereports_Form_Report_ProjectIntake'] = $groups;
+
     $groups[] = 'Grant_Coordinators_96';
+
     $this->_reports['CRM_Casereports_Form_Report_MainActivities'] = $groups;
+
     foreach ($groups as $groupName) {
       try {
         $apiGroupId = civicrm_api3('Group', 'Getvalue', array('name' => $groupName, 'return' => 'id'));
