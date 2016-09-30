@@ -26,6 +26,7 @@ class CRM_Groupsforreports_GroupReport
     );
     $this->_reports ['CRM_Casereports_Form_Report_PumProjects'] = $groups;
     $this->_reports ['CRM_Threepeas_Form_Report_PumProjects'] = $groups;
+    $this->_reports ['CRM_Doorloopcustomer_Form_Report_PumProjectThroughput'] = $groups;
 
     $groups[] = 'Business_Link_Coordinators_21';
 
