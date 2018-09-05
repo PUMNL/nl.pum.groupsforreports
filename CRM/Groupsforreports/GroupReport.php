@@ -37,6 +37,8 @@ class CRM_Groupsforreports_GroupReport
 
     $this->_reports['CRM_Casereports_Form_Report_MainActivities'] = $groups;
 
+    $this->_reports['CRM_Travelcase_Form_Report_TravelCases'] = array('Project_Officers_54');
+
     foreach ($groups as $groupName) {
       try {
         $apiGroupId = civicrm_api3('Group', 'Getvalue', array('name' => $groupName, 'return' => 'id'));
