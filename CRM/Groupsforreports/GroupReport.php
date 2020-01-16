@@ -17,7 +17,6 @@ class CRM_Groupsforreports_GroupReport
   function __construct()
   {
     $groups = array(
-      'Anamon_120',
       'Country_Coordinators_Gabrielle_105',
       //'Programme_Managers_58',
       'Projectmanagers_82',
@@ -70,12 +69,12 @@ class CRM_Groupsforreports_GroupReport
 
   /**
    * Method to get the group ids for the report
-   * 
+   *
    * @param string $reportClass
    * @return array
    * @static
    */
-  public static function getGroupMembersForReport($reportClass) 
+  public static function getGroupMembersForReport($reportClass)
   {
     $result = array();
     $groupsForReports = new CRM_Groupsforreports_GroupReport();
